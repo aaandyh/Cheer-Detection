@@ -51,7 +51,7 @@ function draw() {
 
     if (wristL.confidence > 0.1 || wristR.confidence > 0.1){
       if (wristL.y < shoulderL.y && wristR.y < shoulderR.y){
-        happyFace(pose.rightEye.y, pose.rightEye.x, 170);
+        distanceHands(pose.rightEye.y, pose.rightEye.x, 170);
       }
     }
   }
